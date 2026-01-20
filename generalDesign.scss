@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+}
+
+.dvNavBar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    img{
+        width: 150px;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 40%;
+        a{
+            font-size: large;
+        }
+    }
+}
