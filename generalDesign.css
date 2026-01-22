@@ -20,6 +20,11 @@
   align-items: center;
   width: 60%;
 }
+.dvNavBar span h1 {
+  color: #D4AF37;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Bottom-right shadow */
+}
 .dvNavBar nav {
   display: flex;
   justify-content: space-around;
@@ -78,4 +83,21 @@ main section {
 
 .feedback {
   background-color: rgb(250, 250, 93);
+}
+
+@media screen and (max-width: 600px) {
+  .dvNavBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dvNavBar nav {
+    justify-content: space-around;
+    width: 80%;
+  }
+  header {
+    height: 920px;
+  }
+  main section {
+    height: 920px;
+  }
 }/*# sourceMappingURL=generalDesign.css.map */

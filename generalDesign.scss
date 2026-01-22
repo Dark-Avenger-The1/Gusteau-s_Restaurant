@@ -2,6 +2,16 @@
     margin:0px;
 }
 
+@mixin headerFontConfig($color){
+    color:$color;
+    font-weight: 1000;
+     text-shadow: 
+    /* Horizontal offset, Vertical offset, Blur radius, Color */
+    -1px -1px 0 black,  /* Top-left shadow */
+     1px -1px 0 black,  /* Top-right shadow */
+    -1px  1px 0 black,  /* Bottom-left shadow */
+     1px  1px 0 black;  /* Bottom-right shadow */
+}
 .dvNavBar{
     position: fixed;
     top: 0;
@@ -18,6 +28,9 @@
         display: flex;
         align-items: center;
         width: 60%;
+        h1{
+            @include headerFontConfig(#D4AF37);
+        }
     }
     nav{
         display: flex;
@@ -32,16 +45,7 @@
     }
 }
 
-@mixin headerFontConfig{
-    color: white;
-    font-weight: 1000;
-     text-shadow: 
-    /* Horizontal offset, Vertical offset, Blur radius, Color */
-    -1px -1px 0 black,  /* Top-left shadow */
-     1px -1px 0 black,  /* Top-right shadow */
-    -1px  1px 0 black,  /* Bottom-left shadow */
-     1px  1px 0 black;  /* Bottom-right shadow */
-}
+
 header{
     background-image:url(ImgResources/Background/GustovRestaurant.png) ;
     background-repeat: no-repeat;
@@ -55,12 +59,12 @@ header{
     background-color: red;
     text-align: center;
     h1{
-        @include headerFontConfig();
+        @include headerFontConfig(white);
     }
 
     h2{
         
-        @include headerFontConfig();
+        @include headerFontConfig(white);
     }
 }
 
@@ -84,4 +88,23 @@ main{
 }
 .feedback{
     background-color: rgb(250, 250, 93);
+}
+
+@media screen and (max-width: 600px)  {
+    .dvNavBar{
+        flex-direction: column;
+        align-items:flex-start;
+        nav{
+            justify-content: space-around;
+            width: 80%;
+        }
+    }
+    header{
+        height: 920px;
+    }
+    main{
+        section{
+            height: 920px;
+        }
+    }
 }
