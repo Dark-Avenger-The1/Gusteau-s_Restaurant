@@ -127,8 +127,30 @@ main{
         }
     }
 }
+
+@mixin bookConfig($width){
+    width: $width;
+    height: 100%;
+    border-style: solid;
+}
 .csBook{
     background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        img{
+            @include bookConfig(40%);
+        }
+        form{
+            @include bookConfig(60%);
+
+        }
+    }
 }
 .csFeedback{
     background-color: rgb(250, 250, 93);
