@@ -109,7 +109,10 @@ main{
         background-color: red;
         list-style-type: none;
         display: flex;
+        overflow-x: scroll;
+        margin-bottom: 20px;
         li{
+            flex-shrink: 0;
             width: 200px;
             height: 90%;
             border-style: solid;
@@ -149,13 +152,27 @@ main{
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(80%,90% ,row );
-        img{
+        .dvBookBackground{
             @include bookConfig(40%);
+            
         }
-        form{
+        .dvBookForm{
             @include bookConfig(60%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                    margin-bottom: 20px;
+                }
+            form{
+                width:90%;
+                height: 90%;
+                border-style: solid;
+                
 
+            }
         }
+        
     }
 }
 .csFeedback{
@@ -163,12 +180,26 @@ main{
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(95%, 90%,row );
-        img{
+        .dvContactBackground{
             @include bookConfig(40%);
         }
-        form{
+        .dvContactForm{
             @include bookConfig(60%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                    margin-bottom: 20px;
+                }
+            form{
+                width:90%;
+                height: 90%;
+                border-style: solid;
+                
+
+            }
         }
+        
     }
 }
 

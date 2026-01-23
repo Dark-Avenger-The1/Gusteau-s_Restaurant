@@ -103,8 +103,11 @@ main section {
   background-color: red;
   list-style-type: none;
   display: flex;
+  overflow-x: scroll;
+  margin-bottom: 20px;
 }
 .restaurantMenu ol li {
+  flex-shrink: 0;
   width: 200px;
   height: 90%;
   border-style: solid;
@@ -133,14 +136,25 @@ main section {
   display: flex;
   flex-direction: row;
 }
-.csBook div img {
+.csBook div .dvBookBackground {
   width: 40%;
   height: 100%;
   border-style: solid;
 }
-.csBook div form {
+.csBook div .dvBookForm {
   width: 60%;
   height: 100%;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.csBook div .dvBookForm h1 {
+  margin-bottom: 20px;
+}
+.csBook div .dvBookForm form {
+  width: 90%;
+  height: 90%;
   border-style: solid;
 }
 
@@ -156,14 +170,25 @@ main section {
   display: flex;
   flex-direction: row;
 }
-.csFeedback div img {
+.csFeedback div .dvContactBackground {
   width: 40%;
   height: 100%;
   border-style: solid;
 }
-.csFeedback div form {
+.csFeedback div .dvContactForm {
   width: 60%;
   height: 100%;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.csFeedback div .dvContactForm h1 {
+  margin-bottom: 20px;
+}
+.csFeedback div .dvContactForm form {
+  width: 90%;
+  height: 90%;
   border-style: solid;
 }
 

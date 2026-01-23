@@ -78,19 +78,53 @@
             </section>
             <section id="book" class="csBook">
                 <div>
-                    <img src="" alt="">
-                    <form action="">
+                    <div class="dvBookBackground">
+                    </div>
+                    <div class="dvBookForm">
+                        <h1>Reserve A Table</h1>
+                        <form action="">
+                            <label for="adult">Adults</label>
+                            <input type="number" name="" min="0" id="adult" required>
+                            <label for="child">Children</label>
+                            <input type="number" min="0" id="child"><br>
+                            <label for="day">Date</label>
+                            <input type="date" form="" id="day">
+                            <label for="time">Time</label>
+                            <select name="" id="time">
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                            </select>
+                            <label for="">Serving Type</label>
+                            <select name="" id="time">
+                                <option value="ordinary">Regular</option>
+                                <option value="vip">VIP</option>
+                                <option value="romance">Romantic</option>
+                                <option value="celebrity">Celebrity</option>
+                                <option value="politics">Politics</option>
+                            </select><br>
 
-                    </form>
+                            <label for="request">Special Request</label><br>
+                            <textarea name="" id="request" rows="4" cols="50"></textarea>
+                        </form>
+                    </div>
                 </div>
             </section>
             <section id="contact" class="csFeedback uiFeedback">
                 <div>
-                    <img src="" alt="">
-                    <form action="">
-                        
-                    </form>
+                    <div class="dvContactBackground">
+                    </div>
+                    <div class="dvContactForm">
+                        <h1>Contact Us</h1>
+                        <form action="">
+                            <input type="text" placeholder="Enter Name"><br>
+                            <input type="text" placeholder="Enter Email"><br>
+                            <input type="text" placeholder="Enter Contact Number"><br>
+                            <button>Send</button>
+                        </form>
+                    </div>
                 </div>
+                
             </section>
        </main>
        <footer>
