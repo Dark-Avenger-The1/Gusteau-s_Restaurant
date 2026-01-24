@@ -42,7 +42,10 @@
 }
 
 header {
-  background-image: url(ImgResources/Background/GustovRestaurant.png);
+  /*background-image:url(ImgResources/Background/GustovRestaurant.png) ;
+  background-repeat: no-repeat;
+  background-size:100% 100%; */
+  background-image: url("ImgResources/Background/GustovRestaurant.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -75,6 +78,9 @@ main section {
 
 .about {
   background-color: white;
+  background-image: url("ImgResources/Background/GustovInnerBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -82,9 +88,12 @@ main section {
 .about div {
   width: 500px;
   height: 300px;
-  border-style: solid;
-  border-color: blue;
-  background-color: black;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.67);
 }
 
 .restaurantMenu {
@@ -93,6 +102,9 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("ImgResources/Background/GustovInnerBackground2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .restaurantMenu div {
   width: 80%;
@@ -100,7 +112,12 @@ main section {
 .restaurantMenu ol {
   width: 95%;
   height: 200px;
-  background-color: red;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.67);
   list-style-type: none;
   display: flex;
   overflow-x: scroll;
@@ -110,17 +127,19 @@ main section {
   flex-shrink: 0;
   width: 200px;
   height: 90%;
-  border-style: solid;
+  border: 2px solid rgba(255, 255, 255, 0.67);
   margin-right: 40px;
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
 }
 .restaurantMenu ol li img {
+  border: 1px solid rgba(255, 255, 255, 0.67);
   width: 90%;
   height: 70%;
-  border-style: solid;
   margin: 5px;
 }
 
@@ -140,6 +159,9 @@ main section {
   width: 40%;
   height: 100%;
   border-style: solid;
+  background-image: url("ImgResources/Background/GustovTable.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .csBook div .dvBookForm {
   width: 60%;
@@ -174,6 +196,9 @@ main section {
   width: 40%;
   height: 100%;
   border-style: solid;
+  background-image: url("ImgResources/Background/Gustov.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .csFeedback div .dvContactForm {
   width: 60%;
