@@ -91,6 +91,7 @@ main section {
   margin-bottom: 50px;
 }
 .about div {
+  width: 100%;
   display: flex;
   align-items: center;
 }

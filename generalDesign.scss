@@ -110,6 +110,7 @@ main{
         margin-bottom: 50px;
     }
   div{
+    width: 100%;
     @include flexCenter();
     article{
         margin-left: 10px;
