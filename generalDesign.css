@@ -58,7 +58,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 800px;
-  background-color: red;
+  background-color: rgb(128, 64, 0);
   text-align: center;
 }
 header h1 {
