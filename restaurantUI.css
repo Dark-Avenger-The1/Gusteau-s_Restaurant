@@ -15,6 +15,9 @@
 .uiBook div div label {
   color: black;
 }
+.uiBook div div p {
+  color: black;
+}
 
 .uiBookForm form {
   display: flex;
@@ -124,11 +127,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  .uiBookForm {
+    text-align: center;
+  }
   .uiBookForm form {
+    align-items: center;
     justify-content: space-around;
   }
   .uiBookForm form div {
-    height: 70%;
+    width: auto;
+    height: 90%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -145,5 +153,8 @@
   }
   .uiBookForm form div div select {
     width: 100%;
+  }
+  .uiBookForm form div .btnSubmit {
+    margin: 0px;
   }
 }/*# sourceMappingURL=restaurantUI.css.map */

@@ -24,12 +24,15 @@
             label{
                 color: black;
             }
+            p{
+                color: black;
+            }
         }
     }
 }
 .uiBookForm{
         form{
-             display: flex;
+            display: flex;
             flex-direction: column;
             justify-content: space-between;
             div{
@@ -142,11 +145,13 @@
 }
 @media screen and (max-width:600px){
     .uiBookForm{
+        text-align: center;
         form{
+            align-items: center;
             justify-content: space-around;
             div{
-                
-                height: 70%;
+                width: auto;
+                height: 90%;
                 display: flex;
                 align-items: center;
                 text-align: center;
@@ -164,8 +169,10 @@
                         width:100%;
                     }
                 }
-                  
-                }
+                .btnSubmit{
+                    margin: 0px;
+                }  
+            }
         }
     }
 }
