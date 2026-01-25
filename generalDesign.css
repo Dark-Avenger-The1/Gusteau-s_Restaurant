@@ -100,6 +100,7 @@ main section {
   flex-grow: 0px;
   flex-shrink: 0px;
   margin-left: 10px;
+  margin-right: 20px;
   width: 500px;
   height: 300px;
   display: flex;
@@ -264,6 +265,7 @@ main section {
   .about div article {
     width: 80%;
     height: 200px;
+    margin: 0;
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=generalDesign.css.map */
