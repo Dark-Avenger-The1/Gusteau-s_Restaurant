@@ -69,6 +69,7 @@
   width: 98%;
   height: 100px;
   resize: none;
+  color: black;
 }
 .uiBookForm form div .btnSubmit {
   height: 50px;
