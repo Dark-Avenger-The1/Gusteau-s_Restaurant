@@ -50,7 +50,7 @@
                     align-items: start;
                     justify-content: center;
                     textarea{
-                        width: 90%;
+                        width: 98%;
                         height: 100px;
                         resize: none;
                     }
@@ -61,7 +61,6 @@
                     background-color: black;
                     width: 150px;
                     margin-left: auto;
-                    margin-right: 20px;
                 }
             }
         }
@@ -98,5 +97,31 @@
                 color: black;
             }
         }
+    }
+}
+
+@mixin contactInputs{
+    width: 90%;
+    height: 50px;
+    color: black;
+}
+.uiContactForm{
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+       input{
+            @include contactInputs();
+        &::placeholder{
+            color: black;
+        }
+       }
+
+       button{
+        @include contactInputs();
+        background-color: black;
+        color: white;
+       }
     }
 }

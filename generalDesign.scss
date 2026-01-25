@@ -211,7 +211,7 @@ main{
         @include dvFormConfig(95%, 90%,row );
         .dvContactBackground{
             @include bookConfig(40%);
-            @include backgroundImgConfig("ImgResources/Background/Gustov.png", 100% 100%)
+            @include backgroundImgConfig("ImgResources/Background/Gustov.png",100% 100%)
         }
         .dvContactForm{
             @include bookConfig(60%);
@@ -225,7 +225,7 @@ main{
                 width:90%;
                 height: 90%;
                 
-
+                
             }
         }
         
