@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .dvNavBar {
@@ -91,6 +92,9 @@ main section {
 }
 .about h1 {
   margin-bottom: 50px;
+  color: white;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Bottom-right shadow */
 }
 .about div {
   width: 100%;
@@ -241,6 +245,22 @@ main section {
 .csFeedback div .dvContactForm form {
   width: 90%;
   height: 90%;
+}
+
+footer {
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+.social a i:hover {
+  color: #D4AF37;
 }
 
 @media screen and (max-width: 600px) {
