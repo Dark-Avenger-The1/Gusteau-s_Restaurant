@@ -93,6 +93,7 @@ main{
   section{
     width: 100%;
     height: 800px;
+    background-color: rgb(128, 64, 0);
   }
 }
 @mixin flexCenter{
@@ -100,7 +101,6 @@ main{
     align-items: center;
 }
 .about{
-  background-color: white;
   @include backgroundImgConfig("ImgResources/Background/GustovInnerBackground.png", cover);
   display: flex;
   flex-direction: column;
@@ -123,7 +123,6 @@ main{
 
 .restaurantMenu{
     height: auto;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +176,6 @@ main{
     flex-direction: $direction;
 }
 .csBook{
-    background-color: rgb(128, 64, 0);
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(80%,90% ,row );
@@ -205,7 +203,6 @@ main{
     }
 }
 .csFeedback{
-    background-color: rgb(128, 64, 0);;
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(95%, 90%,row );
