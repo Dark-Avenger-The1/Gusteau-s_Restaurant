@@ -94,6 +94,7 @@ main section {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .about div article {
   flex-grow: 0px;
@@ -114,8 +115,8 @@ main section {
   border: 1px solid rgba(255, 255, 255, 0.67);
 }
 .about div article i {
-  width: 40px;
-  height: 40px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .restaurantMenu {

@@ -112,6 +112,7 @@ main{
   div{
     width: 100%;
     @include flexCenter();
+    justify-content: center;
     article{
         flex-grow: 0px;
         flex-shrink: 0px;
@@ -125,8 +126,8 @@ main{
         text-align: center;
         @include glassBackground();
         i{
-            width: 40px;
-            height: 40px;
+           font-size: 40px;
+           margin-bottom: 20px;
         }
     }
   }
