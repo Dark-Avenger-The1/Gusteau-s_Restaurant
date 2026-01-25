@@ -172,6 +172,9 @@ main{
                 height: 70%;
                 margin: 5px;
             }
+            h3{
+                @include headerFontConfig(white);
+            }
         }
     }
 }

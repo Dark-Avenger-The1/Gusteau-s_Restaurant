@@ -171,6 +171,11 @@ main section {
   height: 70%;
   margin: 5px;
 }
+.restaurantMenu ol li h3 {
+  color: white;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Bottom-right shadow */
+}
 
 .csBook {
   display: flex;
