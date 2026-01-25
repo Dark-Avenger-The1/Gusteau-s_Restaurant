@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="generalDesign.css">
-
+        <link rel="stylesheet" href="restaurantUI.css">
     </head>
     <body>
         <div class="dvNavBar">
@@ -32,16 +32,11 @@
        </header>
        <main>
             <section id="about" class="about uiAbout">
+                <h1>About Us</h1>
                 <div>
-                    
-                </div>
-
-                <div>
-
-                </div>
-
-                <div>
-
+                    <article></article>
+                    <article></article>
+                    <article></article>
                 </div>
             </section>
             <section id="menus" class="restaurantMenu uiMenu">
@@ -178,41 +173,53 @@
                 </ol>
                 </div>
             </section>
-            <section id="book" class="csBook">
+            <section id="book" class="csBook uiBook">
                 <div>
                     <div class="dvBookBackground">
                     </div>
-                    <div class="dvBookForm">
+                    <div class="dvBookForm uiBookForm">
                         <h1>Reserve A Table</h1>
                         <form action="">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" required>
-                            <label for="lastName" required>Last Name</label>
-                            <input type="text" id="lastName"><br>
-                            <label for="adult">Adults</label>
-                            <input type="number" name="" min="0" id="adult" required>
-                            <label for="child">Children</label>
-                            <input type="number" min="0" id="child"><br>
-                            <label for="day">Date</label>
-                            <input type="date" form="" id="day">
-                            <label for="time">Time</label>
-                            <select name="" id="time">
-                                <option value="breakfast">Breakfast</option>
-                                <option value="lunch">Lunch</option>
-                                <option value="dinner">Dinner</option>
-                            </select>
-                            <label for="">Serving Type</label>
-                            <select name="" id="time">
-                                <option value="ordinary">Regular</option>
-                                <option value="vip">VIP</option>
-                                <option value="romance">Romantic</option>
-                                <option value="celebrity">Celebrity</option>
-                                <option value="politics">Politics</option>
-                            </select><br>
+                            <h2>
+                                Fill Out this form
+                            </h2>
+                            <div>
+                                <div>
+                                <label for="adult">Adults</label>
+                                <input type="number" name="" min="0" id="adult" required>
+                                <label for="child">Children</label>
+                                <input type="number" min="0" id="child"><br>
+                                </div>
+                            
+                                <div class="reservationDate">
+                                    <label for="day">Date</label>
+                                    <input type="date" form="" id="day">
+                                    <label for="time">Time</label>
+                                    <select name="" id="time">
+                                        <option value="breakfast">Breakfast</option>
+                                        <option value="lunch">Lunch</option>
+                                        <option value="dinner">Dinner</option>
+                                    </select>
+                                    <label for="">Serving Type</label>
+                                    <select name="" id="time">
+                                        <option value="ordinary">Regular</option>
+                                        <option value="vip">VIP</option>
+                                        <option value="romance">Romantic</option>
+                                        <option value="celebrity">Celebrity</option>
+                                        <option value="politics">Politics</option>
+                                    </select><br>
+                                </div>
 
-                            <label for="request">Special Request</label><br>
-                            <textarea name="" id="request" rows="4" cols="50"></textarea><br>
-                            <input type="submit" value="Submit">
+                            
+                                <div class="specialRequest">
+                                    <label for="request">Special Request</label>
+                                    <br>
+                                    <textarea name="" id="request" rows="4" cols="50"></textarea><br>  
+                                </div>
+                                
+                                <input class="btnSubmit" type="submit" value="Submit">
+                            </div>
+                            
                         </form>
                     </div>
                 </div>

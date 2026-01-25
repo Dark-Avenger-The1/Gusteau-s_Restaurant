@@ -1,0 +1,90 @@
+.uiBook div {
+  background-color: white;
+}
+.uiBook div div h1 {
+  color: black;
+}
+.uiBook div div h2 {
+  color: black;
+}
+.uiBook div div label {
+  color: black;
+}
+
+.uiBookForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.uiBookForm form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+}
+.uiBookForm form div div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.uiBookForm form div div input {
+  height: 30px;
+  width: 40%;
+  color: black;
+}
+.uiBookForm form div div select {
+  width: 20%;
+  background-color: white;
+  color: black;
+}
+.uiBookForm form div .specialRequest {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.uiBookForm form div .specialRequest textarea {
+  width: 90%;
+  height: 100px;
+  resize: none;
+}
+.uiBookForm form div .btnSubmit {
+  height: 50px;
+  background-color: black;
+  width: 150px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.reservationDate {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.reservationDate label {
+  margin-right: 10px;
+}
+.reservationDate input {
+  width: 30%;
+  margin-right: 20px;
+}
+.reservationDate select {
+  width: 30%;
+  height: 40px;
+}
+
+.uiFeedback div {
+  background-color: white;
+}
+.uiFeedback div div h1 {
+  color: black;
+}
+.uiFeedback div div input {
+  color: black;
+}/*# sourceMappingURL=restaurantUI.css.map */

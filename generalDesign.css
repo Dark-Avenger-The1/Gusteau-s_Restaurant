@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  color: white;
 }
 
 .dvNavBar {
@@ -82,10 +83,19 @@ main section {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.about h1 {
+  margin-bottom: 50px;
 }
 .about div {
+  display: flex;
+  align-items: center;
+}
+.about div article {
+  margin-left: 10px;
   width: 500px;
   height: 300px;
   background: rgba(255, 255, 255, 0.05);
@@ -144,7 +154,7 @@ main section {
 }
 
 .csBook {
-  background-color: purple;
+  background-color: rgb(128, 64, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +168,6 @@ main section {
 .csBook div .dvBookBackground {
   width: 40%;
   height: 100%;
-  border-style: solid;
   background-image: url("ImgResources/Background/GustovTable.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -166,7 +175,6 @@ main section {
 .csBook div .dvBookForm {
   width: 60%;
   height: 100%;
-  border-style: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,7 +189,7 @@ main section {
 }
 
 .csFeedback {
-  background-color: rgb(250, 250, 93);
+  background-color: rgb(128, 64, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +203,6 @@ main section {
 .csFeedback div .dvContactBackground {
   width: 40%;
   height: 100%;
-  border-style: solid;
   background-image: url("ImgResources/Background/Gustov.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -203,7 +210,6 @@ main section {
 .csFeedback div .dvContactForm {
   width: 60%;
   height: 100%;
-  border-style: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,7 +220,6 @@ main section {
 .csFeedback div .dvContactForm form {
   width: 90%;
   height: 90%;
-  border-style: solid;
 }
 
 @media screen and (max-width: 600px) {

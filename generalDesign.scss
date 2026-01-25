@@ -1,5 +1,6 @@
 *{
     margin:0px;
+    color: white;
 }
 
 @mixin headerFontConfig($color){
@@ -94,17 +95,28 @@ main{
     height: 800px;
   }
 }
-
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+}
 .about{
   background-color: white;
   @include backgroundImgConfig("ImgResources/Background/GustovInnerBackground.png", cover);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  h1{
+        margin-bottom: 50px;
+    }
   div{
-    width:500px;
-    height: 300px;
-    @include glassBackground();
+    @include flexCenter();
+    article{
+        margin-left: 10px;
+        width:500px;
+        height: 300px;
+        @include glassBackground();
+    }
   }
 }
 
@@ -151,7 +163,6 @@ main{
 @mixin bookConfig($width){
     width: $width;
     height: 100%;
-    border-style: solid;
 }
 @mixin sectionCenterConfig(){
     display: flex;
@@ -165,7 +176,7 @@ main{
     flex-direction: $direction;
 }
 .csBook{
-    background-color: purple;
+    background-color: rgb(128, 64, 0);
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(80%,90% ,row );
@@ -193,7 +204,7 @@ main{
     }
 }
 .csFeedback{
-    background-color: rgb(250, 250, 93);
+    background-color: rgb(128, 64, 0);;
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(95%, 90%,row );
@@ -212,7 +223,6 @@ main{
             form{
                 width:90%;
                 height: 90%;
-                border-style: solid;
                 
 
             }
