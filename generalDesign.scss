@@ -57,7 +57,8 @@
         width: 40%;
         a{
             font-size: large;
-            color:white;
+            
+            @include headerFontConfig(white);
             text-decoration: none;
             margin-right: 5px;
         }

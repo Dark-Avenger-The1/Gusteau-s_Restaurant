@@ -38,6 +38,8 @@
 .dvNavBar nav a {
   font-size: large;
   color: white;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Bottom-right shadow */
   text-decoration: none;
   margin-right: 5px;
 }

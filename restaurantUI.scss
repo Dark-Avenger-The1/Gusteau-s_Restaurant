@@ -7,6 +7,18 @@
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
+.uiNav{
+    a{
+        padding: 20px 10px 20px 10px;
+        border: 1px;
+        border-bottom: solid;
+        border-color: transparent;
+        &:hover{
+            
+            border-color: #D4AF37;
+        }
+    }
+}
 .uiBook{
     
     div{
