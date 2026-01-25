@@ -164,12 +164,16 @@ main section {
   display: flex;
   flex-direction: row;
 }
+.csBook div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .csBook div .dvBookBackground {
   width: 40%;
   height: 100%;
-  background-image: url("ImgResources/Background/GustovTable.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /* @include backgroundImgConfig("ImgResources/Background/GustovTable.png",100% 100% )*/
 }
 .csBook div .dvBookForm {
   width: 60%;
@@ -198,12 +202,16 @@ main section {
   display: flex;
   flex-direction: row;
 }
+.csFeedback div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .csFeedback div .dvContactBackground {
   width: 40%;
   height: 100%;
-  background-image: url("ImgResources/Background/Gustov.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /*@include backgroundImgConfig("ImgResources/Background/Gustov.png",100% 100%)*/
 }
 .csFeedback div .dvContactForm {
   width: 60%;

@@ -1,7 +1,19 @@
+@mixin formBorderRadius{
+    background-color: white;
+    border-radius: 15px;
+}
+
+@mixin imgBorderRadius{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
 .uiBook{
     
     div{
-        background-color: white;
+       @include formBorderRadius();
+        img{
+            @include imgBorderRadius();
+        }
         div{
             h1{
                 color: black;
@@ -27,34 +39,34 @@
                 width: 100%;
                 height: 80%;
                 div{
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                input{
-                    height: 30px;
-                    width: 40%;
-                    color: black;
-                }
-                select{
-                    width:20%;
-                    background-color: white;
-                    color: black;
-                }
-                }
-                .specialRequest{
+                    width: 100%;
+                    height: auto;
                     display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: center;
-                    textarea{
-                        width: 98%;
-                        height: 100px;
-                        resize: none;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    input{
+                        height: 30px;
+                        width: 40%;
+                        color: black;
                     }
-                
+                    select{
+                        width:20%;
+                        background-color: white;
+                        color: black;
+                    }
+                    }
+                    .specialRequest{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        textarea{
+                            width: 98%;
+                            height: 100px;
+                            resize: none;
+                        }
+                    
                 }
                 .btnSubmit{
                     height: 50px;
@@ -88,7 +100,10 @@
 
 .uiFeedback{
     div{
-        background-color: white;
+       @include formBorderRadius();
+        img{
+            @include imgBorderRadius();
+        }
         div{
             h1{
                 color: black;
@@ -123,5 +138,34 @@
         background-color: black;
         color: white;
        }
+    }
+}
+@media screen and (max-width:600px){
+    .uiBookForm{
+        form{
+            justify-content: space-around;
+            div{
+                
+                height: 70%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    
+                    input{
+                        width: 100%;
+                    }
+                    select{
+                        width:100%;
+                    }
+                }
+                  
+                }
+        }
     }
 }

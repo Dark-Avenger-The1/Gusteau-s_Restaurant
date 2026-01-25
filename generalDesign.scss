@@ -179,9 +179,14 @@ main{
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(80%,90% ,row );
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         .dvBookBackground{
             @include bookConfig(40%);
-            @include backgroundImgConfig("ImgResources/Background/GustovTable.png",100% 100% )
+           /* @include backgroundImgConfig("ImgResources/Background/GustovTable.png",100% 100% )*/
         }
         .dvBookForm{
             @include bookConfig(60%);
@@ -206,9 +211,14 @@ main{
     @include sectionCenterConfig();
     div{
         @include dvFormConfig(95%, 90%,row );
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         .dvContactBackground{
             @include bookConfig(40%);
-            @include backgroundImgConfig("ImgResources/Background/Gustov.png",100% 100%)
+            /*@include backgroundImgConfig("ImgResources/Background/Gustov.png",100% 100%)*/
         }
         .dvContactForm{
             @include bookConfig(60%);

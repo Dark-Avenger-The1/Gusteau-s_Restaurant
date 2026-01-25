@@ -1,5 +1,10 @@
 .uiBook div {
   background-color: white;
+  border-radius: 15px;
+}
+.uiBook div img {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .uiBook div div h1 {
   color: black;
@@ -80,6 +85,11 @@
 
 .uiFeedback div {
   background-color: white;
+  border-radius: 15px;
+}
+.uiFeedback div img {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .uiFeedback div div h1 {
   color: black;
@@ -111,4 +121,29 @@
   color: black;
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .uiBookForm form {
+    justify-content: space-around;
+  }
+  .uiBookForm form div {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .uiBookForm form div div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .uiBookForm form div div input {
+    width: 100%;
+  }
+  .uiBookForm form div div select {
+    width: 100%;
+  }
 }/*# sourceMappingURL=restaurantUI.css.map */
